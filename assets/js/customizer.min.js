@@ -1,0 +1,1 @@
+!function($){wp.customize("storefront_header_link_color",function(n){n.bind(function(n){$(".menu-toggle").css("color",n)})}),wp.customize("storefront_header_background_color",function(n){n.bind(function(n){$(".main-navigation div.menu, .main-navigation .handheld-navigation").css("background-color",n)})})}(jQuery);

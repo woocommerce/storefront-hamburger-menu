@@ -177,6 +177,7 @@ final class Storefront_Hamburger_Menu {
 		if ( 'Storefront' == $theme->name || 'storefront' == $theme->template && apply_filters( 'storefront_hamburger_menu_supported', true ) ) {
 			add_action( 'wp_enqueue_scripts', array( $this, 'shm_styles' ) );
 			add_action( 'wp_enqueue_scripts', array( $this, 'shm_add_customizer_css' ), 999 );
+			add_action( 'customize_preview_init', array( $this, 'shm_customize_preview_js' ) );
 		}
 		 else {
 			add_action( 'admin_notices', array( $this, 'shm_install_storefront_notice' ) );
@@ -223,12 +224,22 @@ final class Storefront_Hamburger_Menu {
 					color: ' . storefront_adjust_color_brightness( $header_link_color, -100 ) . ';
 				}
 
-				.main-navigation div.menu {
+				.main-navigation div.menu,
+				.main-navigation .handheld-navigation {
 					background-color: ' . $header_background_color . ';
 				}
 			}
 		';
 
 		wp_add_inline_style( 'storefront-woocommerce-style', $wc_style );
+	}
+
+	/**
+	 * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
+	 *
+	 * @since  1.0.0
+	 */
+	public function shm_customize_preview_js() {
+		wp_enqueue_script( 'shm-customizer', plugins_url( '/assets/js/customizer.min.js', __FILE__ ), array( 'customize-preview' ), '1.1', true );
 	}
 } // End Class
