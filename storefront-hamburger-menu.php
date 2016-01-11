@@ -228,6 +228,11 @@ final class Storefront_Hamburger_Menu {
 				.main-navigation .handheld-navigation {
 					background-color: ' . $header_background_color . ';
 				}
+
+				.main-navigation ul li a,
+				ul.menu li a {
+					color: ' . $header_link_color . ';
+				}
 			}
 		';
 

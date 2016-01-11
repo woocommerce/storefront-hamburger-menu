@@ -3,95 +3,98 @@
 @import '../../../../themes/storefront/sass/utils/variables';
 
 @media screen and (max-width: 768px) {
-	.main-navigation {
-		.handheld-navigation,
-		div.menu {
-			position: fixed;
-			top: 0;
-			left: -80%;
-			width: 80%;
-			height: 100%;
-			transition: left 0.2s;
-			background: #2c2d33;
-			overflow-y: scroll;
-			-webkit-overflow-scrolling: touch;
-			-webkit-transition: left 0.2s;
-			-moz-transition: left 0.2s;
-			-ms-transition: left 0.2s;
-			-o-transition: left 0.2s;
-			transition: left 0.2s;
-			z-index: 9999;
-			display: block !important;
-
-			> ul {
-				margin-top: .53em;
-			}
-		}
-
-		.menu-toggle {
-			display: block;
-			height: 2.244em;
-			width: 2.244em;
-			position: absolute;
-			top: 0;
-			right: 0;
-			background-color: rgba(0,0,0,.05);
-			text-indent: -9999px;
-			margin: 0;
-			box-shadow: none;
-
-			&:before {
-				position: absolute;
-				top: 0;
-				right: 0;
-				line-height: 2.244;
-				width: 100%;
-				text-align: center;
-				text-indent: 0;
-				margin: 0;
-			}
-
-			&:focus {
-				outline-width: 1px;
-			}
-		}
-
-		&.toggled {
-			.handheld-navigation,
-			div.menu {
-				left: 0;
-			}
-
-			.menu-toggle {
-				&:before {
-					content: '\f00d';
-				}
-			}
-		}
-	}
-
-	.site-header-cart {
-		.cart-contents {
-			right: 2.618em !important;
-		}
-	}
-
-	body.admin-bar {
+	 .storefront-hamburger-menu-active {
 		.main-navigation {
 			.handheld-navigation,
 			div.menu {
-				padding-top: 32px;
+				position: fixed;
+				top: 0;
+				left: -80%;
+				width: 80%;
+				height: 100%;
+				transition: left 0.2s;
+				overflow-y: scroll;
+				-webkit-overflow-scrolling: touch;
+				-webkit-transition: left 0.2s;
+				-moz-transition: left 0.2s;
+				-ms-transition: left 0.2s;
+				-o-transition: left 0.2s;
+				transition: left 0.2s;
+				z-index: 9999;
+				display: block !important;
+
+				> ul {
+					margin-top: .53em;
+				}
+			}
+
+			.menu-toggle {
+				display: block;
+				height: 2.244em;
+				width: 2.244em;
+				position: absolute;
+				top: 0;
+				right: 0;
+				background-color: rgba(0,0,0,.05);
+				text-indent: -9999px;
+				margin: 0;
+				box-shadow: none;
+
+				&:before {
+					position: absolute;
+					top: 0;
+					right: 0;
+					line-height: 2.244;
+					width: 100%;
+					text-align: center;
+					text-indent: 0;
+					margin: 0;
+				}
+
+				&:focus {
+					outline-width: 1px;
+				}
+			}
+
+			&.toggled {
+				.handheld-navigation,
+				div.menu {
+					left: 0;
+				}
+
+				.menu-toggle {
+					&:before {
+						content: '\f00d';
+					}
+				}
+			}
+		}
+
+		.site-header-cart {
+			.cart-contents {
+				right: 2.618em;
+			}
+		}
+
+		&.admin-bar {
+			.main-navigation {
+				.handheld-navigation,
+				div.menu {
+					padding-top: 32px;
+				}
 			}
 		}
 	}
 }
 
 @media screen and (max-width: 782px) {
-	body.admin-bar {
-		.main-navigation {
-			.handheld-navigation,
-			div.menu {
-				padding-top: 46px;
+	.storefront-hamburger-menu-active {
+		&.admin-bar {
+			.main-navigation {
+				.handheld-navigation,
+				div.menu {
+					padding-top: 46px;
+				}
 			}
 		}
 	}
