@@ -137,7 +137,6 @@ final class Storefront_Hamburger_Menu {
 	public function shm_plugin_links( $links ) {
 		$plugin_links = array(
 			'<a href="http://support.woothemes.com/">' . __( 'Support', 'storefront-hamburger-menu' ) . '</a>',
-			'<a href="http://docs.woothemes.com/document/storefront-hamburger-menu/">' . __( 'Docs', 'storefront-hamburger-menu' ) . '</a>',
 		);
 
 		return array_merge( $plugin_links, $links );
@@ -178,6 +177,7 @@ final class Storefront_Hamburger_Menu {
 			add_action( 'wp_enqueue_scripts', array( $this, 'shm_styles' ) );
 			add_action( 'wp_enqueue_scripts', array( $this, 'shm_add_customizer_css' ), 999 );
 			add_action( 'customize_preview_init', array( $this, 'shm_customize_preview_js' ) );
+			add_filter( 'body_class', array( $this, 'shm_body_class' ) );
 		}
 		 else {
 			add_action( 'admin_notices', array( $this, 'shm_install_storefront_notice' ) );
@@ -241,5 +241,14 @@ final class Storefront_Hamburger_Menu {
 	 */
 	public function shm_customize_preview_js() {
 		wp_enqueue_script( 'shm-customizer', plugins_url( '/assets/js/customizer.min.js', __FILE__ ), array( 'customize-preview' ), '1.1', true );
+	}
+
+	/**
+	 * Storefront Extension Boilerplate Body Class
+	 * Adds a class based on the extension name and any relevant settings.
+	 */
+	public function shm_body_class( $classes ) {
+		$classes[] = 'storefront-hamburger-menu-active';
+		return $classes;
 	}
 } // End Class
