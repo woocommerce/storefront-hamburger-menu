@@ -11,7 +11,9 @@ Storefront Hamburger Menu turns the default handheld navigation into an off-scre
 
 == Description ==
 
+A simple plugin that turns the default handheld navigation into an off-screen sidebar menu with a "hamburger" toggle.
 
+This plugin requires the Storefront theme to be installed.
 
 == Installation ==
 
@@ -25,5 +27,5 @@ Storefront Hamburger Menu turns the default handheld navigation into an off-scre
 
 == Changelog ==
 
-= 1.0.0 - 10.30.2015 =
+= 1.0.0 - 01.12.2016 =
 Initial release.
