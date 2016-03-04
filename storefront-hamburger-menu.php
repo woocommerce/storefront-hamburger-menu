@@ -3,7 +3,7 @@
  * Plugin Name:			Storefront Hamburger Menu
  * Plugin URI:			https://wordpress.org/plugins/storefront-hamburger-menu/
  * Description:			Storefront Hamburger Menu turns the default handheld navigation into an off-screen sidebar menu with a "hamburger" toggle.
- * Version:				1.0.0
+ * Version:				1.1.0
  * Author:				WooThemes
  * Author URI:			http://woothemes.com/
  * Requires at least:	4.0.0
@@ -74,7 +74,7 @@ final class Storefront_Hamburger_Menu {
 		$this->token 			= 'storefront-hamburger-menu';
 		$this->plugin_url 		= plugin_dir_url( __FILE__ );
 		$this->plugin_path 		= plugin_dir_path( __FILE__ );
-		$this->version 			= '1.0.0';
+		$this->version 			= '1.1.0';
 
 		register_activation_hook( __FILE__, array( $this, 'install' ) );
 
@@ -202,7 +202,14 @@ final class Storefront_Hamburger_Menu {
 	 * @return  void
 	 */
 	public function shm_styles() {
-		wp_enqueue_style( 'shm-styles', plugins_url( '/assets/css/style.css', __FILE__ ), '', '1.0.0' );
+		wp_enqueue_style( 'shm-styles', plugins_url( '/assets/css/style.css', __FILE__ ), '', $this->version );
+		wp_enqueue_script( 'shm-scripts', plugins_url( '/assets/js/frontend.min.js', __FILE__ ), array( 'jquery' ), $this->version, true );
+
+		$translation_array = array(
+			'close' => __( 'Close', 'storefront-hamburger-menu' )
+		);
+
+		wp_localize_script( 'shm-scripts', 'shm_i18n', $translation_array );
 	}
 
 	/**
@@ -211,8 +218,8 @@ final class Storefront_Hamburger_Menu {
 	 * @since 1.0.0
 	 */
 	public function shm_add_customizer_css() {
-		$header_background_color	= storefront_sanitize_hex_color( get_theme_mod( 'storefront_header_background_color', apply_filters( 'storefront_default_header_background_color', '#2c2d33' ) ) );
-		$header_link_color			= storefront_sanitize_hex_color( get_theme_mod( 'storefront_header_link_color', apply_filters( 'storefront_default_header_link_color', '#ffffff' ) ) );
+		$header_background_color	= sanitize_text_field( get_theme_mod( 'storefront_header_background_color', apply_filters( 'storefront_default_header_background_color', '#2c2d33' ) ) );
+		$header_link_color			= sanitize_text_field( get_theme_mod( 'storefront_header_link_color', apply_filters( 'storefront_default_header_link_color', '#cccccc' ) ) );
 
 		$wc_style = '
 			@media screen and (max-width: 768px) {
@@ -230,7 +237,8 @@ final class Storefront_Hamburger_Menu {
 				}
 
 				.main-navigation ul li a,
-				ul.menu li a {
+				ul.menu li a,
+				.storefront-hamburger-menu-active .shm-close {
 					color: ' . $header_link_color . ';
 				}
 			}

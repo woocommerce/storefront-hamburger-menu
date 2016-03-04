@@ -1,4 +1,9 @@
+.storefront-hamburger-menu-active .shm-close {
+  display: none; }
+
 @media screen and (max-width: 768px) {
+  .storefront-hamburger-menu-active .main-navigation ul li a {
+    padding: .857em 1.387em; }
   .storefront-hamburger-menu-active .main-navigation .handheld-navigation,
   .storefront-hamburger-menu-active .main-navigation div.menu {
     position: fixed;
@@ -15,7 +20,8 @@
     -o-transition: left 0.2s;
     transition: left 0.2s;
     z-index: 9999;
-    display: block !important; }
+    display: block !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.2); }
     .storefront-hamburger-menu-active .main-navigation .handheld-navigation > ul,
     .storefront-hamburger-menu-active .main-navigation div.menu > ul {
       margin-top: .53em; }
@@ -41,11 +47,34 @@
       margin: 0; }
     .storefront-hamburger-menu-active .main-navigation .menu-toggle:focus {
       outline-width: 1px; }
+  .storefront-hamburger-menu-active .main-navigation.toggled:after {
+    content: '';
+    background-color: #000;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    opacity: .8;
+    z-index: 9998; }
   .storefront-hamburger-menu-active .main-navigation.toggled .handheld-navigation,
   .storefront-hamburger-menu-active .main-navigation.toggled div.menu {
-    left: 0; }
-  .storefront-hamburger-menu-active .main-navigation.toggled .menu-toggle:before {
-    content: '\f00d'; }
+    left: 0;
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.7); }
+  .storefront-hamburger-menu-active .shm-close {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    overflow: hidden;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+    .storefront-hamburger-menu-active .shm-close:before {
+      font-family: "FontAwesome";
+      font-weight: 400;
+      content: '\f00d';
+      margin-right: 1em;
+      display: inline-block;
+      padding: .857em 0 .857em 1.387em; }
   .storefront-hamburger-menu-active .site-header-cart .cart-contents {
     right: 2.618em; }
   .storefront-hamburger-menu-active.admin-bar .main-navigation .handheld-navigation,

@@ -1,4 +1,0 @@
-*** Storefront Hamburger Menu Changelog ***
-
-2015.12.09 - version 1.0.0
-* Initial release

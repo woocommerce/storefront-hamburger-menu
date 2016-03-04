@@ -2,8 +2,8 @@
 Contributors: tiagonoronha, woothemes
 Tags: woocommerce, ecommerce, storefront, menu, hamburger
 Requires at least: 4.0
-Tested up to: 4.4
-Stable tag: 1.0.0
+Tested up to: 4.4.2
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -26,6 +26,11 @@ This plugin requires the Storefront theme to be installed.
 1. The hamburger menu in action.
 
 == Changelog ==
+
+= 1.1.0 - 03.04.2016 =
+* New - Close button inside the off-screen menu.
+* New - Overlay on top of the content making what is the menu more obvious.
+* Tweak - Storefront 2.0 compatibility.
 
 = 1.0.0 - 01.12.2016 =
 Initial release.
