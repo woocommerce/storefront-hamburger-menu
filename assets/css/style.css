@@ -25,38 +25,20 @@
     .storefront-hamburger-menu-active .main-navigation .handheld-navigation > ul,
     .storefront-hamburger-menu-active .main-navigation div.menu > ul {
       margin-top: .53em; }
-  .storefront-hamburger-menu-active .main-navigation .menu-toggle {
-    display: block;
-    height: 2.244em;
-    width: 2.244em;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.05);
-    text-indent: -9999px;
-    margin: 0;
-    box-shadow: none; }
-    .storefront-hamburger-menu-active .main-navigation .menu-toggle:before {
-      position: absolute;
-      top: 0;
-      right: 0;
-      line-height: 2.244;
-      width: 100%;
-      text-align: center;
-      text-indent: 0;
-      margin: 0; }
-    .storefront-hamburger-menu-active .main-navigation .menu-toggle:focus {
-      outline-width: 1px; }
-  .storefront-hamburger-menu-active .main-navigation.toggled:after {
-    content: '';
-    background-color: #000;
-    position: fixed;
-    right: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    opacity: .8;
-    z-index: 9998; }
+  .storefront-hamburger-menu-active .main-navigation.toggled button.menu-toggle:before {
+    -webkit-transform: translateY(-4px);
+    -moz-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+    -o-transform: translateY(-4px);
+    transform: translateY(-4px); }
+  .storefront-hamburger-menu-active .main-navigation.toggled button.menu-toggle:after {
+    -webkit-transform: translateY(4px);
+    -moz-transform: translateY(4px);
+    -ms-transform: translateY(4px);
+    -o-transform: translateY(4px);
+    transform: translateY(4px); }
+  .storefront-hamburger-menu-active .main-navigation.toggled button.menu-toggle span:before {
+    opacity: 1; }
   .storefront-hamburger-menu-active .main-navigation.toggled .handheld-navigation,
   .storefront-hamburger-menu-active .main-navigation.toggled div.menu {
     left: 0;

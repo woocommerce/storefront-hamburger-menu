@@ -43,45 +43,19 @@
 				}
 			}
 
-			.menu-toggle {
-				display: block;
-				height: 2.244em;
-				width: 2.244em;
-				position: absolute;
-				top: 0;
-				right: 0;
-				background-color: rgba(0,0,0,.05);
-				text-indent: -9999px;
-				margin: 0;
-				box-shadow: none;
-
-				&:before {
-					position: absolute;
-					top: 0;
-					right: 0;
-					line-height: 2.244;
-					width: 100%;
-					text-align: center;
-					text-indent: 0;
-					margin: 0;
-				}
-
-				&:focus {
-					outline-width: 1px;
-				}
-			}
-
 			&.toggled {
-				&:after {
-					content: '';
-					background-color: #000;
-					position: fixed;
-					right: 0;
-					left: 0;
-					top: 0;
-					bottom: 0;
-					opacity: .8;
-					z-index: 9998;
+				button.menu-toggle {
+					&:before {
+						@include transform(translateY(-4px));
+					}
+
+					&:after {
+						@include transform(translateY(4px));
+					}
+
+					span:before {
+						opacity: 1;
+					}
 				}
 
 				.handheld-navigation,
