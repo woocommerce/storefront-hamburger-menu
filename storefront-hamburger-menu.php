@@ -3,11 +3,11 @@
  * Plugin Name:			Storefront Hamburger Menu
  * Plugin URI:			https://wordpress.org/plugins/storefront-hamburger-menu/
  * Description:			Storefront Hamburger Menu turns the default handheld navigation into an off-screen sidebar menu with a "hamburger" toggle.
- * Version:				1.1.3
+ * Version:				1.2.0
  * Author:				WooThemes
  * Author URI:			http://woothemes.com/
  * Requires at least:	4.0.0
- * Tested up to:		4.4.0
+ * Tested up to:		4.5.3
  *
  * Text Domain: storefront-hamburger-menu
  * Domain Path: /languages/
@@ -74,7 +74,7 @@ final class Storefront_Hamburger_Menu {
 		$this->token 			= 'storefront-hamburger-menu';
 		$this->plugin_url 		= plugin_dir_url( __FILE__ );
 		$this->plugin_path 		= plugin_dir_path( __FILE__ );
-		$this->version 			= '1.1.3';
+		$this->version 			= '1.2.0';
 
 		register_activation_hook( __FILE__, array( $this, 'install' ) );
 
@@ -253,7 +253,7 @@ final class Storefront_Hamburger_Menu {
 	 * @since  1.0.0
 	 */
 	public function shm_customize_preview_js() {
-		wp_enqueue_script( 'shm-customizer', plugins_url( '/assets/js/customizer.min.js', __FILE__ ), array( 'customize-preview' ), '1.1', true );
+		wp_enqueue_script( 'shm-customizer', plugins_url( '/assets/js/customizer.min.js', __FILE__ ), array( 'customize-preview' ), $this->version, true );
 	}
 
 	/**
