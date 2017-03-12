@@ -1,7 +1,7 @@
 .storefront-hamburger-menu-active .shm-close {
   display: none; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .storefront-hamburger-menu-active .main-navigation ul li a {
     padding: .857em 1.387em; }
   .storefront-hamburger-menu-active .main-navigation .handheld-navigation,
