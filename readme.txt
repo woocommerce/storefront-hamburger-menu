@@ -2,8 +2,8 @@
 Contributors: tiagonoronha, woothemes
 Tags: woocommerce, ecommerce, storefront, menu, hamburger
 Requires at least: 4.0
-Tested up to: 4.7.5
-Stable tag: 1.2.1
+Tested up to: 4.9
+Stable tag: 1.2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -26,6 +26,9 @@ This plugin requires the Storefront theme to be installed.
 1. The hamburger menu in action.
 
 == Changelog ==
+
+= 1.2.2 - 21.05.2018 =
+* Tweak - Storefront 2.3 compatibility.
 
 = 1.2.1 - 01.06.2017 =
 * Fix - Change the value of max-width media query to 767px to match the responsive breakpoint in Storefront.
