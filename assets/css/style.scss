@@ -1,6 +1,6 @@
-@import 'susy';
-@import 'bourbon';
-@import '../../../../themes/storefront/assets/sass/utils/variables';
+
+@import '../../../../themes/storefront/assets/css/sass/utils/variables';
+@import '../../../../themes/storefront/assets/css/sass/vendors/font-awesome/variables';
 
 .storefront-hamburger-menu-active {
 	.shm-close {
@@ -46,11 +46,11 @@
 			&.toggled {
 				button.menu-toggle {
 					&:before {
-						@include transform(translateY(-4px));
+						transform: translateY(-4px);
 					}
 
 					&:after {
-						@include transform(translateY(4px));
+						transform: translateY(4px);
 					}
 
 					span:before {
@@ -95,6 +95,20 @@
 				.handheld-navigation,
 				div.menu {
 					padding-top: 32px;
+				}
+			}
+		}
+	}
+}
+
+.storefront-2-3 {
+	&.storefront-hamburger-menu-active {
+		.main-navigation {
+			.shm-close {
+				&:before {
+					font-family: "Font Awesome 5 Free";
+					font-weight: 900;
+					content: fa-content( $fa-var-times );
 				}
 			}
 		}
