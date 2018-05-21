@@ -26,16 +26,8 @@
     .storefront-hamburger-menu-active .main-navigation div.menu > ul {
       margin-top: .53em; }
   .storefront-hamburger-menu-active .main-navigation.toggled button.menu-toggle:before {
-    -webkit-transform: translateY(-4px);
-    -moz-transform: translateY(-4px);
-    -ms-transform: translateY(-4px);
-    -o-transform: translateY(-4px);
     transform: translateY(-4px); }
   .storefront-hamburger-menu-active .main-navigation.toggled button.menu-toggle:after {
-    -webkit-transform: translateY(4px);
-    -moz-transform: translateY(4px);
-    -ms-transform: translateY(4px);
-    -o-transform: translateY(4px);
     transform: translateY(4px); }
   .storefront-hamburger-menu-active .main-navigation.toggled button.menu-toggle span:before {
     opacity: 1; }
@@ -62,6 +54,12 @@
   .storefront-hamburger-menu-active.admin-bar .main-navigation .handheld-navigation,
   .storefront-hamburger-menu-active.admin-bar .main-navigation div.menu {
     padding-top: 32px; } }
+
+.storefront-2-3.storefront-hamburger-menu-active .main-navigation .shm-close:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f00d"; }
+
 @media screen and (max-width: 782px) {
   .storefront-hamburger-menu-active.admin-bar .main-navigation .handheld-navigation,
   .storefront-hamburger-menu-active.admin-bar .main-navigation div.menu {

@@ -261,7 +261,14 @@ final class Storefront_Hamburger_Menu {
 	 * Adds a class based on the extension name and any relevant settings.
 	 */
 	public function shm_body_class( $classes ) {
+		global $storefront_version;
+
+		if ( version_compare( $storefront_version, '2.3.0', '>=' ) ) {
+			$classes[] = 'storefront-2-3';
+		}
+
 		$classes[] = 'storefront-hamburger-menu-active';
+
 		return $classes;
 	}
 } // End Class
