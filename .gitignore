@@ -1,3 +1,4 @@
 .sass-cache
 .codekit-cache
 config.codekit
+.DS_Store
