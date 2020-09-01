@@ -1,5 +1,5 @@
 === Storefront Hamburger Menu ===
-Contributors: tiagonoronha, woothemes
+Contributors: woocommerce,automattic,tiagonoronha,woothemes
 Tags: woocommerce, ecommerce, storefront, menu, hamburger
 Requires at least: 4.0
 Tested up to: 4.9
