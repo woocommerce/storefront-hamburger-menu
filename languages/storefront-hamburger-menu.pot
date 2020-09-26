@@ -1,16 +1,18 @@
-# Copyright (C) 2016 Storefront Hamburger Menu
+# Copyright (C) 2020 WooCommerce
 # This file is distributed under the same license as the Storefront Hamburger Menu package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Storefront Hamburger Menu 1.1.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/storefront-hamburger-menu\n"
-"POT-Creation-Date: 2016-03-04 16:25:37+00:00\n"
+"Project-Id-Version: Storefront Hamburger Menu 1.2.2\n"
+"Report-Msgid-Bugs-To: "
+"https://wordpress.org/support/plugin/storefront-hamburger-menu/\n"
+"POT-Creation-Date: 2020-09-26 08:42:13+00:00\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2020-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"X-Generator: grunt-wp-i18n 1.0.3\n"
 
 #: storefront-hamburger-menu.php:120 storefront-hamburger-menu.php:129
 msgid "Cheatin&#8217; huh?"
@@ -21,7 +23,9 @@ msgid "Support"
 msgstr ""
 
 #: storefront-hamburger-menu.php:195
-msgid "Storefront Hamburger Menu requires that you use Storefront as your parent theme."
+msgid ""
+"Storefront Hamburger Menu requires that you use Storefront as your parent "
+"theme."
 msgstr ""
 
 #: storefront-hamburger-menu.php:195
@@ -31,6 +35,7 @@ msgstr ""
 #: storefront-hamburger-menu.php:209
 msgid "Close"
 msgstr ""
+
 #. Plugin Name of the plugin/theme
 msgid "Storefront Hamburger Menu"
 msgstr ""
@@ -40,13 +45,15 @@ msgid "https://wordpress.org/plugins/storefront-hamburger-menu/"
 msgstr ""
 
 #. Description of the plugin/theme
-msgid "Storefront Hamburger Menu turns the default handheld navigation into an off-screen sidebar menu with a \"hamburger\" toggle."
+msgid ""
+"Storefront Hamburger Menu turns the default handheld navigation into an "
+"off-screen sidebar menu with a \"hamburger\" toggle."
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "WooThemes"
+msgid "WooCommerce"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "http://woothemes.com/"
+msgid "http://woocommerce.com/"
 msgstr ""

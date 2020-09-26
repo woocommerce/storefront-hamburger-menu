@@ -14,10 +14,6 @@
     transition: left 0.2s;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
-    -webkit-transition: left 0.2s;
-    -moz-transition: left 0.2s;
-    -ms-transition: left 0.2s;
-    -o-transition: left 0.2s;
     transition: left 0.2s;
     z-index: 9999;
     display: block !important;
@@ -64,3 +60,4 @@
   .storefront-hamburger-menu-active.admin-bar .main-navigation .handheld-navigation,
   .storefront-hamburger-menu-active.admin-bar .main-navigation div.menu {
     padding-top: 46px; } }
+/*# sourceMappingURL=style.css.map */

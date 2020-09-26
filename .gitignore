@@ -1,4 +1,5 @@
 .sass-cache
-.codekit-cache
-config.codekit
 .DS_Store
+node_modules/
+/storefront-hamburger-menu
+storefront-hamburger-menu.zip 
