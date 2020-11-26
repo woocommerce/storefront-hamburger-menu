@@ -9,6 +9,9 @@
 }
 
 @media screen and (max-width: 767px) {
+		.site-header {
+			z-index: 10000;
+		}
 	 .storefront-hamburger-menu-active {
 		.main-navigation {
 			ul {
