@@ -117,7 +117,7 @@ final class Storefront_Hamburger_Menu {
 	 * @since 1.0.0
 	 */
 	public function __clone() {
-		_doing_it_wrong( __FUNCTION__, __( 'Cheatin&#8217; huh?' ), '1.0.0' );
+		_doing_it_wrong( __FUNCTION__, __( 'Cheatin&#8217; huh?', 'storefront-hamburger-menu' ), '1.0.0' );
 	}
 
 	/**
@@ -126,7 +126,7 @@ final class Storefront_Hamburger_Menu {
 	 * @since 1.0.0
 	 */
 	public function __wakeup() {
-		_doing_it_wrong( __FUNCTION__, __( 'Cheatin&#8217; huh?' ), '1.0.0' );
+		_doing_it_wrong( __FUNCTION__, __( 'Cheatin&#8217; huh?', 'storefront-hamburger-menu' ), '1.0.0' );
 	}
 
 	/**
